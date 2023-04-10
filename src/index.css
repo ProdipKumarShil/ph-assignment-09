@@ -8,3 +8,15 @@
 .mBtn{
   @apply myBg w-44 h-16 rounded-lg text-white text-xl font-bold active:scale-95
 }
+.myHeader{
+  @apply text-5xl font-semibold
+}
+.myPara{
+  @apply my-8 text-xl text-gray-400
+}
+.subTitle{
+  @apply text-xl font-semibold
+}
+.myGradientTxt{
+  @apply bg-clip-text myBg text-transparent
+}
