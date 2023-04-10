@@ -9,7 +9,9 @@ function App() {
   return (
     <div className="App">
       <Navbar></Navbar>
-      <AppliedJobs></AppliedJobs>
+      {/* <Home></Home> */}
+      <JobDetails></JobDetails>
+      {/* <AppliedJobs></AppliedJobs> */}
     </div>
   )
 }
