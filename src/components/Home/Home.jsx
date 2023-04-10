@@ -3,6 +3,7 @@ import Lottie from 'lottie-react'
 import girlJob from '../../../public/job.json'
 import { BeakerIcon } from '@heroicons/react/24/solid'
 import CategoryCard from '../CategoryCard/CategoryCard';
+import FeatureJob from '../FeatureJob/FeatureJob';
 
 const Home = () => {
   return (
@@ -33,6 +34,8 @@ const Home = () => {
           <CategoryCard></CategoryCard>
         </div>
       </div>
+
+      <FeatureJob></FeatureJob>
     </div>
   );
 };

@@ -12,7 +12,10 @@
   @apply text-5xl font-semibold
 }
 .myPara{
-  @apply my-8 text-xl text-gray-400
+  @apply  text-xl text-gray-400
+}
+.myTitle{
+  @apply text-2xl font-bold
 }
 .subTitle{
   @apply text-xl font-semibold
@@ -20,3 +23,7 @@
 .myGradientTxt{
   @apply bg-clip-text myBg text-transparent
 }
+.intro{
+  @apply text-base
+}
+
