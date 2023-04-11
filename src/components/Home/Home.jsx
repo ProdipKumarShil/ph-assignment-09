@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Lottie from 'lottie-react'
 import girlJob from '../../../public/job.json'
 import { BeakerIcon } from '@heroicons/react/24/solid'
 import CategoryCard from '../CategoryCard/CategoryCard';
 import FeatureJob from '../FeatureJob/FeatureJob';
+import { useLoaderData } from 'react-router-dom';
 
 const Home = () => {
+  const jobs = useLoaderData()
+  
+  // useEffect(
+  //   fetch()
+  //   ,[])
+  
   return (
     <div className='max-w-7xl mx-auto p-4'>
       {/* banner section */}
@@ -35,7 +42,7 @@ const Home = () => {
         </div>
       </div>
 
-      <FeatureJob></FeatureJob>
+      <FeatureJob jobs={jobs}></FeatureJob>
     </div>
   );
 };
