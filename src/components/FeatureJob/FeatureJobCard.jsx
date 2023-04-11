@@ -1,5 +1,6 @@
 import React from 'react';
 import { MapPinIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline'
+import { Link } from 'react-router-dom';
 
 const FeatureJobCard = () => {
   return (
@@ -17,7 +18,8 @@ const FeatureJobCard = () => {
         <p className='flex items-center'><MapPinIcon className='w-6 h-6 mr-1'/> Dhaka, Bangladesh</p>
         <p className='flex items-center'><CurrencyDollarIcon className='w-6 h-6 mr-1'/> Salary : 100K - 150K</p>
       </div>
-      <button className='mBtn mt-6'>View Details</button>
+        <Link to='jobDetails' className='mBtn justify-center items-center flex mt-6'>View Details</Link>
+      
     </div>
   );
 };

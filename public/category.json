@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Account & Finance",
+    "subTitle": "300 Jobs Available",
+    "img": "https://img.icons8.com/dusk/64/000000/withdrawal.png"
+  },
+  {
+    "title": "Creative Design",
+    "subTitle": "100+ Jobs Available",
+    "img": "https://img.icons8.com/dusk/64/null/innovation.png"
+  },
+  {
+    "title": "Marketing & Sales",
+    "subTitle": "150 Jobs Available",
+    "img": "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/null/external-marketing-copywriting-flaticons-lineal-color-flat-icons.png"
+  },
+  {
+    "title": "Engineering Job",
+    "subTitle": "224 Jobs Available",
+    "img": "https://img.icons8.com/dusk/64/null/smartphone-cpu.png"
+  }
+]
