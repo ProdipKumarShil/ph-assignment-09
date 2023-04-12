@@ -20,7 +20,7 @@ const FeatureJobCard = ({job}) => {
         <p className='flex items-center'><MapPinIcon className='w-6 h-6 mr-1'/>{location}</p>
         <p className='flex items-center'><CurrencyDollarIcon className='w-6 h-6 mr-1'/> Salary : {salary}</p>
       </div>
-      <Link to={`/jobDetails/${id}`} onClick={() => saveTheId(id)} className='mBtn justify-center items-center flex mt-6'>View Details</Link>
+      <Link to={`/jobDetails/${id}`} className='mBtn justify-center items-center flex mt-6'>View Details</Link>
       
     </div>
   );
