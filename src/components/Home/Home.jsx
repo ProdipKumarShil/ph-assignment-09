@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Lottie from 'lottie-react'
 import girlJob from '../../../public/job.json'
 import { BeakerIcon } from '@heroicons/react/24/solid'
@@ -8,11 +8,15 @@ import { useLoaderData } from 'react-router-dom';
 
 const Home = () => {
   const jobs = useLoaderData()
-  
-  // useEffect(
-  //   fetch()
-  //   ,[])
-  
+
+  const [categorys, setCategorys] = useState([])
+  useEffect(() => {
+    fetch('category.json')
+      .then(res => res.json())
+      .then(data => setCategorys(data))
+  }
+    , [])
+
   return (
     <div className='max-w-7xl mx-auto p-4'>
       {/* banner section */}
@@ -35,10 +39,11 @@ const Home = () => {
         {/* category card */}
         <div className="mb-4 grid md:grid-cols-4 gap-7 p-4 md:p-10">
           {/* dynamic category card goes here */}
-          <CategoryCard></CategoryCard>
-          <CategoryCard></CategoryCard>
-          <CategoryCard></CategoryCard>
-          <CategoryCard></CategoryCard>
+          
+          {
+            categorys.map((category, idx) => <CategoryCard key={ idx } category={category}></CategoryCard>)
+          }
+
         </div>
       </div>
 

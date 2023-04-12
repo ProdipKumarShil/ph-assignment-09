@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BeakerIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline'
+import { useLoaderData } from 'react-router-dom';
 
 const JobDetails = () => {
+  const id = useLoaderData()
+  const [jobs, setJobs] = useState([])
+  // console.log(id)
+  useEffect(
+    () => {
+      fetch('/data2.json')
+        .then(res => res.json())
+        .then(data => setJobs(data))
+    }
+    ,[])
+    // jobs.find(job => console.log(job))
   return (
     <div className='max-w-7xl mx-auto my-10 p-4 grid  md:grid-cols-12 items-center grid-flow-dense'>
       <div className="w-full md:col-span-8 pr-4">

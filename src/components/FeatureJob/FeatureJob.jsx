@@ -2,7 +2,7 @@ import React from 'react';
 import FeatureJobCard from './FeatureJobCard';
 
 const FeatureJob = ({jobs}) => {
-  console.log(jobs)
+  // console.log(jobs)
   return (
     <div>
       <h1 className='myHeader text-center'>Featured Jobs</h1>
