@@ -7,7 +7,7 @@ const FakeJobDetails = () => {
   return (
     <div className=''>
       <div className="">
-        <Lottie className='w-44 mx-auto' animationData={walk} />
+        <Lottie className='w-80 mx-auto' animationData={walk} />
         <h1 className='text-5xl font-semibold text-center'>Please select a Job</h1>
       </div>
     </div>

@@ -1,9 +1,10 @@
 import React from 'react';
 import { MapPinIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline'
 import { saveTheId } from '../../utilities/db';
+import { Link } from 'react-router-dom';
 
 const AppliedJobsCard = ({ findedJob }) => {
-  const {company, img, salary, jobTitle, location, arr} = findedJob
+  const {id, company, img, salary, jobTitle, location, arr} = findedJob
   return (
     <div className='border rounded-lg p-4 md:p-10 md:flex items-center mb-6'>
       <div className="h-60 md:w-60 bg-gray-200 flex items-center rounded-2xl">
@@ -21,7 +22,7 @@ const AppliedJobsCard = ({ findedJob }) => {
           <p className='flex items-center'><CurrencyDollarIcon className='w-6 h-6 mr-1 text-indigo-500' />{salary}</p>
         </div>
       </div>
-      <button className='mBtn mt-6'>View Details</button>
+      <Link to={`/jobDetails/${id}`} className='mBtn mt-6 flex items-center justify-center'>View Details</Link>
     </div>
   );
 };

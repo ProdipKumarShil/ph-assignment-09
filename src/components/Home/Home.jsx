@@ -4,7 +4,7 @@ import girlJob from '../../../public/job.json'
 import { BeakerIcon } from '@heroicons/react/24/solid'
 import CategoryCard from '../CategoryCard/CategoryCard';
 import FeatureJob from '../FeatureJob/FeatureJob';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 
 const Home = () => {
   const jobsL = useLoaderData()
@@ -37,7 +37,7 @@ const Home = () => {
         <div className="">
           <h1 className='text-7xl font-bold leading-tight'>One Step <br /> Closer To Your <br /><span className='bg-clip-text myBg text-transparent'>Dream Job</span></h1>
           <p className='md:w-[500px] my-8 text-xl text-gray-400'>Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
-          <button className='mBtn'>Get Started</button>
+          <Link className='mBtn flex items-center justify-center' to='blogs'>Get Started</Link>
         </div>
         {/* lottie animations */}
         <Lottie className='mt-4 md:mt-0' animationData={girlJob} />
