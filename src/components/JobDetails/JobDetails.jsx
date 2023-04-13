@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { BeakerIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline'
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
+import { saveTheId } from '../../utilities/db';
+import Loader from '../Loader/Loader';
 
 const JobDetails = () => {
   const id = useLoaderData()
@@ -57,13 +59,13 @@ const JobDetails = () => {
               <p className='myPara'><span className='font-bold text-slate-500 '>Address :</span> {location}</p>
             </div>
           </div>
-          <button className='myBg w-full h-16 rounded-lg text-white text-xl font-bold active:scale-95'>Apply</button>
+          <Link to='/yourJobs' onClick={() => saveTheId(id)} className='mBtn flex justify-center items-center myBg w-full h-16 rounded-lg text-white text-xl font-bold active:scale-95'>Apply</Link>
         </div>
       </div>
     );
   }
   else{
-    return <h1>Please wait</h1>
+    return <Loader></Loader>
   }
 
   

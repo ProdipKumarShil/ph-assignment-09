@@ -6,7 +6,7 @@ import { Bars3BottomLeftIcon, Bars3CenterLeftIcon } from '@heroicons/react/24/ou
 const Navbar = () => {
   return (
     <div className='max-w-7xl flex justify-between items-center my-5 mx-auto px-4'>
-      <Link to='/' className='text-3xl font-semibold'>CareerHub</Link>
+      <Link to='/' className='text-3xl font-semibold'>Bd Jobs</Link>
       <ul className='hidden md:inline-block'>
         <Link to='jobDetails' className='mr-4 text-lg font-medium'>Job Details</Link>
         <Link to='yourJobs' className='mr-4 text-lg font-medium'>Your Jobs</Link>

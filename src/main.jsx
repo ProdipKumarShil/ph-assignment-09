@@ -9,16 +9,23 @@ import {
 import JobDetails from './components/JobDetails/JobDetails';
 import AppliedJobs from './components/AppliedJobs/AppliedJobs';
 import Home from './components/Home/Home';
+import Error from './components/Error/Error';
+import FakeJobDetails from './components/fakeJobDetails/fakeJobDetails';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+    errorElement: <Error></Error>,
     children: [
       {
         path: '/',
         element: <Home></Home>,
-        loader: () => fetch('data2.json')
+        loader: () => fetch('/data2.json')
+      },
+      {
+        path: 'jobDetails',
+        element: <FakeJobDetails></FakeJobDetails>
       },
       {
         path: 'jobDetails/:Ids',
