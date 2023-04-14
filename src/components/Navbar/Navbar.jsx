@@ -14,7 +14,7 @@ const Navbar = () => {
       <Link to='/' className='text-3xl font-semibold'>Bd Jobs</Link>
       <ul className='hidden md:inline-block'>
         <NavLink to='' className={({ isActive }) => isActive ? 'mr-4 text-lg font-medium text-indigo-400 underline' : 'mr-4 text-lg font-medium'}>Home</NavLink>
-        <NavLink to='jobDetails' className={({ isActive }) => isActive ? 'mr-4 text-lg font-medium text-indigo-400 underline' : 'mr-4 text-lg font-medium'}>Job Details</NavLink>
+        <NavLink to='Statistics' className={({ isActive }) => isActive ? 'mr-4 text-lg font-medium text-indigo-400 underline' : 'mr-4 text-lg font-medium'}>Statistics</NavLink>
         <NavLink to='yourJobs' className={({ isActive }) => isActive ? 'mr-4 text-lg font-medium text-indigo-400 underline' : 'mr-4 text-lg font-medium'}>Your Jobs</NavLink>
         <NavLink to='blogs' className={({ isActive }) => isActive ? 'mr-4 text-lg font-medium text-indigo-400 underline' : 'mr-4 text-lg font-medium'}>Blogs</NavLink>
       </ul>

@@ -10,7 +10,8 @@ import JobDetails from './components/JobDetails/JobDetails';
 import AppliedJobs from './components/AppliedJobs/AppliedJobs';
 import Home from './components/Home/Home';
 import Error from './components/Error/Error';
-import FakeJobDetails from './components/fakeJobDetails/fakeJobDetails';
+import FakeJobDetails from './components/FakeJobDetails/FakeJobDetails';
+import Blogs from './components/Blogs/Blogs';
 
 const router = createBrowserRouter([
   {
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
         loader: () => fetch('/data2.json')
       },
       {
-        path: 'jobDetails',
+        path: 'Statistics',
         element: <FakeJobDetails></FakeJobDetails>
       },
       {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: 'yourJobs',
         element: <AppliedJobs></AppliedJobs>
+      },
+      {
+        path: 'blogs',
+        element: <Blogs></Blogs>
       }
     ]
   },
